@@ -1,38 +1,70 @@
 # sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Todo lo que necesitas para construir un proyecto Svelte, potenciado por [`sv`](https://github.com/sveltejs/cli).
 
-## Creating a project
+## Creando un proyecto
 
-If you're seeing this, you've probably already done this step. Congrats!
+Si estás viendo esto, probablemente ya hayas completado este paso. ¡Felicidades!
 
 ```bash
-# create a new project in the current directory
+# crear un nuevo proyecto en el directorio actual
 npx sv create
 
-# create a new project in my-app
+# crear un nuevo proyecto en my-app
 npx sv create my-app
 ```
 
-## Developing
+## Desarrollo
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Una vez que hayas creado un proyecto e instalado las dependencias con `npm install` (o `pnpm install` o `yarn`), inicia un servidor de desarrollo:
 
 ```bash
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# o inicia el servidor y abre la aplicación en una nueva pestaña del navegador
 npm run dev -- --open
 ```
 
-## Building
+## Construcción
 
-To create a production version of your app:
+Para crear una versión de producción de tu aplicación:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Puedes previsualizar la construcción de producción con `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+> Para desplegar tu aplicación, es posible que necesites instalar un [adaptador](https://svelte.dev/docs/kit/adapters) para tu entorno objetivo.
+
+## Pruebas
+
+Para ejecutar pruebas en tu proyecto, asegúrate de tener configurado un marco de pruebas como Jest o Mocha. Luego, puedes ejecutar las pruebas con:
+
+```bash
+npm test
+```
+
+## Despliegue
+
+Para desplegar tu aplicación, sigue los pasos específicos para tu adaptador. Por ejemplo, si estás usando Vercel, puedes ejecutar:
+
+```bash
+vercel
+```
+
+Asegúrate de consultar la documentación del adaptador para obtener instrucciones detalladas.
+
+## Contribuciones
+
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
