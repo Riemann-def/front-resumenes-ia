@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],
+	define: {
+		'process.env': process.env
+	  },
 	server: {
 		watch: {
 		  usePolling: true
