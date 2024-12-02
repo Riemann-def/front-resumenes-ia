@@ -75,10 +75,10 @@
 		{#each Object.entries(groupedSummaries) as [date, summaries]}
 			<div class="mb-8">
 				<!-- Encabezado de la fecha -->
-				<h2 class="mb-4 text-xl font-semibold">{date}</h2>
+				<h2 class="mb-4 text-lg sm:text-xl font-semibold">{date}</h2>
 
 				<!-- Lista de resúmenes -->
-				<div class="space-y-4">
+				<div class="grid grid-cols-1 gap-6">
 					{#each summaries as summary (summary.id)}
 						<div
 							class="min-h-42 relative rounded-xl bg-neutral-50 p-4 shadow hover:bg-white"
@@ -92,15 +92,15 @@
 								<span class="rounded-md px-2 py-1 text-sm bg-gray-200">{summary.tone}</span>
 							</div>
 							<!-- URL original -->
-							<h5 class="mb-2 text-lg">
+							<p class="mb-2 text-lg truncate">
 								<a
 									href={summary.original_url}
 									target="_blank"
 									class="text-indigo-500 hover:underline">{summary.original_url}</a
 								>
-							</h5>
+							</p>
 							<!-- Resumen -->
-							<p class="mb-2 text-xl text-gray-800 my-4">{summary.summary_text}</p>
+							<p class="mb-2 text-xl text-gray-800 my-4 text-justify">{summary.summary_text}</p>
 							<!-- Fecha -->
 							<!-- <p class="text-md text-gray-500 mb-2">{formatDate(summary.created_at)}</p> -->
 

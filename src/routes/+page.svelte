@@ -12,7 +12,8 @@
 	}
 </script>
 
-<div class="flex flex-col">
-	<NuevoResumen on:newsummary={handleNewSummary} />
-	<Historial {summaries} />
-</div>
+<div class="flex flex-col w-full max-w-6xl mx-auto space-y-8">
+	<NuevoResumen class="w-full" on:newsummary={handleNewSummary} />
+	<Historial class="w-full md:w-3/5" {summaries} />
+  </div>
+  

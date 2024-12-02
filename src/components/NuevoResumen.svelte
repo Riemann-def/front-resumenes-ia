@@ -64,7 +64,7 @@
 </script>
 
 <!-- Formulario para crear resumen -->
-<div class="container mx-auto py-8 min-w-96 min-h-[400px] flex items-center justify-center">
+<div class="container mx-auto py-8 flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-0">
 
 	<div class="flex flex-col w-full space-y-4">
 		<!-- Input para URL -->
